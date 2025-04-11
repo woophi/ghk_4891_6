@@ -16,12 +16,10 @@ const container = style({
 });
 
 const box = style({
-  display: 'flex',
-  padding: '1rem',
-  flexDirection: 'column',
-  gap: '1rem',
+  padding: '24px',
   borderRadius: '1rem',
   backgroundColor: '#F3F4F5',
+  marginTop: '1rem',
 });
 
 const row = style({
@@ -36,10 +34,13 @@ globalStyle(`${switchItem} > span > span:first-child`, {
   fontWeight: 500,
 });
 
+const img = style({ margin: '0 auto', maxWidth: '327px', objectFit: 'contain' });
+
 export const appSt = {
   bottomBtn,
   container,
   box,
   row,
   switchItem,
+  img,
 };
