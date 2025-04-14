@@ -44,7 +44,7 @@ export const App = () => {
   return (
     <>
       <div className={appSt.container}>
-        <img src={hb} width="100%" height={184} className={appSt.img} />
+        <img src={hb} width={80} height={80} />
         <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h1" view="small" font="system" weight="semibold">
           Программа долгосрочных сбережений
         </Typography.TitleResponsive>
@@ -231,6 +231,7 @@ export const App = () => {
         <div
           onClick={() => {
             window.gtag('event', '4891_moreinfo_var6');
+            window.location.replace('https://alfa-npf.ru/');
           }}
           className={appSt.row}
           style={{ marginTop: '1rem' }}
